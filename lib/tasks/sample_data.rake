@@ -16,5 +16,11 @@ namespace :db do
 						 :password => password,
 						 :password_confirmation => password)
 		end
+
+		User.all(:limit => 2).each do |user|
+			31.times do
+				user.micropost.create!(:content => Faker::Lorem.sentence(5))
+			end
+		end
 	end
 end
