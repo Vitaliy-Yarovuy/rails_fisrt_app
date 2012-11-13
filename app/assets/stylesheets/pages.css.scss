@@ -71,6 +71,23 @@ a{
 			background: #5CA038;
 			color: #fff;
 		}
+
+		.front{
+			width: 100%;
+		}
+		.sidebar.round{
+    		border: 1px solid #000;
+
+			.user_info{
+				a {
+					display: block;
+					span{
+						display: inline-block;
+						height: 20px;
+					}
+				}
+			}
+		}
 	}
 	footer{
 		padding-left: 20px;
